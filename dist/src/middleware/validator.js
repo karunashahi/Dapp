@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.validateCarName = void 0;
+exports.validateUniName = void 0;
 const express_validator_1 = require("express-validator");
-exports.validateCarName = (0, express_validator_1.param)('Car')
+exports.validateUniName = (0, express_validator_1.param)('Uni')
     .isString()
-    .isIn(['BMW', 'Tesla', 'Benz', 'Audi'])
-    .withMessage('Car name must be either BMW, Tesla, Benz, or Audi');
+    .isIn(['UEL', 'Oxford', 'Harvard', 'MIT'])
+    .withMessage('Uni name must be either UEL, Oxford, Harvard, or MIT');
 //# sourceMappingURL=validator.js.map

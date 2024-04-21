@@ -1,7 +1,7 @@
-interface CarData {
-  Car: String;
-  Speed: number;
-  Price: number;
-  Safety: string;
-  Colour: string;
+interface UniData {
+  Uni: String;
+  Students: number;
+  Fees: number;
+  Rank: string;
+  Admission: string;
 }

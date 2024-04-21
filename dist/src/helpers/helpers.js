@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.storeCarData = void 0;
+exports.storeUniData = void 0;
 const tslib_1 = require("tslib");
 const algosdk_1 = tslib_1.__importDefault(require("algosdk"));
 const config_js_1 = require("../config/config.js");
-const storeCarData = async (data) => {
+const storeUniData = async (data) => {
     try {
         const client = (0, config_js_1.getClient)();
         const account = (0, config_js_1.getAccount)();
@@ -22,8 +22,8 @@ const storeCarData = async (data) => {
         console.log("Transaction ID:", sendTxn.txId);
     }
     catch (error) {
-        console.error("Failed to store Car data:", error);
+        console.error("Failed to store University data:", error);
     }
 };
-exports.storeCarData = storeCarData;
+exports.storeUniData = storeUniData;
 //# sourceMappingURL=helpers.js.map

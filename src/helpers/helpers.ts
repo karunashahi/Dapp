@@ -1,6 +1,6 @@
 import algosdk from "algosdk";
 import { getClient, getAccount } from "../config/config.js";
-export const storeCarData = async (data: CarData): Promise<void> => {
+export const storeUniData = async (data: UniData): Promise<void> => {
 try {
 const client = getClient();
 const account = getAccount();
@@ -21,6 +21,6 @@ const sendTxn = await client.sendRawTransaction(signedTxn).do();
 
 console.log("Transaction ID:", sendTxn.txId);
 } catch (error) {
-console.error("Failed to store Car data:", error);
+console.error("Failed to store University data:", error);
 }
 };

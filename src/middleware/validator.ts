@@ -1,5 +1,5 @@
 import { param } from 'express-validator';
-export const validateCarName = param('Car')
+export const validateUniName = param('Uni')
   .isString()
-  .isIn(['BMW', 'Tesla', 'Benz', 'Audi'])
-  .withMessage('Car name must be either BMW, Tesla, Benz, or Audi');
+  .isIn(['UEL', 'Oxford', 'Harvard', 'MIT'])
+  .withMessage('Uni name must be either UEL, Oxford, Harvard, or MIT');
