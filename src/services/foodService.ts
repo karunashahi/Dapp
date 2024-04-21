@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker';
-// import { storeFoodData } from '../helpers/helpers.js';
+import { storeFoodData } from '../helpers/helpers.js';
 
 export const generatePotatoFoodData = (): FoodData => {
   const generateFoodData = {
@@ -10,7 +10,7 @@ export const generatePotatoFoodData = (): FoodData => {
     Vitamin: faker.number.int({ min: 3, max: 45 }),
   };
 
-  // storeFoodData(generateFoodData); try { } catch (console) { } Error;
+  storeFoodData(generateFoodData); try { } catch (console) { } Error;
 
   return generateFoodData;
 };
@@ -23,7 +23,7 @@ export const generateSaladFoodData = (): FoodData => {
     Vitamin: faker.number.int({ min: 4, max: 60 }),
   };
 
-  // storeFoodData(generateFoodData).catch(console.error);
+  storeFoodData(generateFoodData).catch(console.error);
 
   return generateFoodData;
 };
@@ -36,7 +36,7 @@ export const generatePizzaFoodData = (): FoodData => {
     Vitamin: faker.number.int({ min: 15, max: 65 }),
   };
 
-  // storeFoodData(generateFoodData).catch(console.error);
+  storeFoodData(generateFoodData).catch(console.error);
 
   return generateFoodData;
 };
@@ -49,7 +49,7 @@ export const generateBananaFoodData = (): FoodData => {
     Vitamin: faker.number.int({ min: 15, max: 75 }),
   };
 
-  // storeFoodData(generateFoodData).catch(console.error);
+  storeFoodData(generateFoodData).catch(console.error);
 
   return generateFoodData;
 };

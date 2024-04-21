@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.generateBananaFoodData = exports.generatePizzaFoodData = exports.generateSaladFoodData = exports.generatePotatoFoodData = void 0;
 const faker_1 = require("@faker-js/faker");
-// import { storeFoodData } from '../helpers/helpers.js';
+const helpers_js_1 = require("../helpers/helpers.js");
 const generatePotatoFoodData = () => {
     const generateFoodData = {
         Food: 'Patato',
@@ -11,7 +11,10 @@ const generatePotatoFoodData = () => {
         Carbohydrate: faker_1.faker.number.int({ min: 3, max: 65 }),
         Vitamin: faker_1.faker.number.int({ min: 3, max: 45 }),
     };
-    // storeFoodData(generateFoodData); try { } catch (console) { } Error;
+    (0, helpers_js_1.storeFoodData)(generateFoodData);
+    try { }
+    catch (console) { }
+    Error;
     return generateFoodData;
 };
 exports.generatePotatoFoodData = generatePotatoFoodData;
@@ -23,7 +26,7 @@ const generateSaladFoodData = () => {
         Carbohydrate: faker_1.faker.number.int({ min: 5, max: 50 }),
         Vitamin: faker_1.faker.number.int({ min: 4, max: 60 }),
     };
-    // storeFoodData(generateFoodData).catch(console.error);
+    (0, helpers_js_1.storeFoodData)(generateFoodData).catch(console.error);
     return generateFoodData;
 };
 exports.generateSaladFoodData = generateSaladFoodData;
@@ -35,7 +38,7 @@ const generatePizzaFoodData = () => {
         Carbohydrate: faker_1.faker.number.int({ min: 5, max: 58 }),
         Vitamin: faker_1.faker.number.int({ min: 15, max: 65 }),
     };
-    // storeFoodData(generateFoodData).catch(console.error);
+    (0, helpers_js_1.storeFoodData)(generateFoodData).catch(console.error);
     return generateFoodData;
 };
 exports.generatePizzaFoodData = generatePizzaFoodData;
@@ -47,7 +50,7 @@ const generateBananaFoodData = () => {
         Carbohydrate: faker_1.faker.number.int({ min: 12, max: 78 }),
         Vitamin: faker_1.faker.number.int({ min: 15, max: 75 }),
     };
-    // storeFoodData(generateFoodData).catch(console.error);
+    (0, helpers_js_1.storeFoodData)(generateFoodData).catch(console.error);
     return generateFoodData;
 };
 exports.generateBananaFoodData = generateBananaFoodData;

@@ -1,25 +1,29 @@
 "use strict";
-// import algosdk from "algosdk";
-// import { getClient, getAccount } from "../config/config.js";
-// export const storeStudentData = async (data: StudentData): Promise<void> => {
-// try {
-// const client = getClient();
-// const account = getAccount();
-// const suggestedParams = await client.getTransactionParams().do();
 Object.defineProperty(exports, "__esModule", { value: true });
-// const note = algosdk.encodeObj(data);
-// const txn = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
-// from: account.addr,
-// to: account.addr, // Sending the transaction to oneself
-// amount: 1000, // Minimum amount
-// note: note,
-// suggestedParams: suggestedParams,
-// });
-// const signedTxn = txn.signTxn(account.sk);
-// const sendTxn = await client.sendRawTransaction(signedTxn).do();
-// console.log("Transaction ID:", sendTxn.txId);
-// } catch (error) {
-// console.error("Failed to store weather data:", error);
-// }
-// };
+exports.storeFoodData = void 0;
+const tslib_1 = require("tslib");
+const algosdk_1 = tslib_1.__importDefault(require("algosdk"));
+const config_js_1 = require("../config/config.js");
+const storeFoodData = async (data) => {
+    try {
+        const client = (0, config_js_1.getClient)();
+        const account = (0, config_js_1.getAccount)();
+        const suggestedParams = await client.getTransactionParams().do();
+        const note = algosdk_1.default.encodeObj(data);
+        const txn = algosdk_1.default.makePaymentTxnWithSuggestedParamsFromObject({
+            from: account.addr,
+            to: account.addr, // Sending the transaction to oneself
+            amount: 1000, // Minimum amount
+            note: note,
+            suggestedParams: suggestedParams,
+        });
+        const signedTxn = txn.signTxn(account.sk);
+        const sendTxn = await client.sendRawTransaction(signedTxn).do();
+        console.log("Transaction ID:", sendTxn.txId);
+    }
+    catch (error) {
+        console.error("Failed to store weather data:", error);
+    }
+};
+exports.storeFoodData = storeFoodData;
 //# sourceMappingURL=helpers.js.map
