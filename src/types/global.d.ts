@@ -1,7 +1,7 @@
-interface FoodData {
-  Food: String;
-  Weight: number;
-  Protein: number;
-  Carbohydrate: number;
-  Vitamin: number;
+interface CarData {
+  Car: String;
+  Speed: number;
+  Price: number;
+  Safety: string;
+  Colour: string;
 }

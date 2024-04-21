@@ -1,5 +1,5 @@
 import { param } from 'express-validator';
-export const validateFoodName = param('Food')
+export const validateCarName = param('Car')
   .isString()
-  .isIn(['Potato', 'Salad', 'Pizza', 'Banana'])
-  .withMessage('Food name must be either Potato, Salad, Pizza, or Banana');
+  .isIn(['BMW', 'Tesla', 'Benz', 'Audi'])
+  .withMessage('Car name must be either BMW, Tesla, Benz, or Audi');
