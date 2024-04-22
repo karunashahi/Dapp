@@ -1,7 +1,7 @@
-interface UniData {
-  Uni: String;
-  Students: number;
-  Fees: number;
-  Rank: string;
-  Admission: string;
+interface CountryData {
+  Country: String;
+  Population: number;
+  Area: number;
+  Expenses: string;
+  Safety: string;
 }

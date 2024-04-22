@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.storeUniData = void 0;
+exports.storeCountryData = void 0;
 const tslib_1 = require("tslib");
 const algosdk_1 = tslib_1.__importDefault(require("algosdk"));
 const config_js_1 = require("../config/config.js");
-const storeUniData = async (data) => {
+const storeCountryData = async (data) => {
     try {
         const client = (0, config_js_1.getClient)();
         const account = (0, config_js_1.getAccount)();
@@ -22,8 +22,8 @@ const storeUniData = async (data) => {
         console.log("Transaction ID:", sendTxn.txId);
     }
     catch (error) {
-        console.error("Failed to store University data:", error);
+        console.error("Failed to store Country data:", error);
     }
 };
-exports.storeUniData = storeUniData;
+exports.storeCountryData = storeCountryData;
 //# sourceMappingURL=helpers.js.map

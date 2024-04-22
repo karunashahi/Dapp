@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const express_1 = tslib_1.__importDefault(require("express"));
 const validator_js_1 = require("../middleware/validator.js");
-const uniController_js_1 = require("../controllers/uniController.js");
+const countryController_js_1 = require("../controllers/countryController.js");
 const router = express_1.default.Router();
-router.get('/:Uni', validator_js_1.validateUniName, uniController_js_1.getUniData);
+router.get('/:Country', validator_js_1.validateCountryName, countryController_js_1.getCountryData);
 exports.default = router;
-//# sourceMappingURL=uniRoute.js.map
+//# sourceMappingURL=countryRoute.js.map

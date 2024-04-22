@@ -1,5 +1,5 @@
 import express from 'express';
-import UniRoute from './routes/uniRoute.js';
+import CountryRoute from './routes/countryRoute.js';
 import cors from "cors";
 
 // We will create an express app
@@ -9,7 +9,7 @@ const PORT = 3000;
 app.use(express.json());
 app.use(cors());
 // //our new route
-app.use('/api/Uni', UniRoute);
+app.use('/api/Country', CountryRoute);
 // Start the express server
 app.listen(PORT, () => {
   console.log('Server is listening on port ${PORT}');

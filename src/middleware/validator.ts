@@ -1,5 +1,5 @@
 import { param } from 'express-validator';
-export const validateUniName = param('Uni')
+export const validateCountryName = param('Country')
   .isString()
-  .isIn(['UEL', 'Oxford', 'Harvard', 'MIT'])
-  .withMessage('Uni name must be either UEL, Oxford, Harvard, or MIT');
+  .isIn(['UK', 'USA', 'Nepal', 'France'])
+  .withMessage('Country name must be either UK, USA, Nepal, or France');

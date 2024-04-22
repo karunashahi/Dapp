@@ -6,7 +6,7 @@ const algosdk_1 = tslib_1.__importDefault(require("algosdk"));
 const algodToken = "a".repeat(64);
 const server = "http://localhost";
 const port = "4001";
-const mnemonic = "skull shrimp horse fever exit image make vanish possible deliver opinion black seat spell spice together order chair domain toast normal rice baby above employ";
+const mnemonic = "artefact drive mask hill undo seminar kitchen erupt sponsor already dose basic flat raccoon inherit morning monster glove dismiss erode return erupt payment above category";
 function getClient() {
     let client = new algosdk_1.default.Algodv2(algodToken, server, port);
     return client;
